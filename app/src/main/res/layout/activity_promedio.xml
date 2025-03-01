@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/azul_fondo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Notas"
+        android:textSize="22sp"
+        android:textColor="@color/oro"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/blanco"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/inputNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del estudiante"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="@drawable/input_background" />
+
+            <EditText
+                android:id="@+id/inputNota1"
+                style="@style/InputStyle"
+                android:hint="Nota 1" />
+
+            <EditText
+                android:id="@+id/inputNota2"
+                style="@style/InputStyle"
+                android:hint="Nota 2" />
+
+            <EditText
+                android:id="@+id/inputNota3"
+                style="@style/InputStyle"
+                android:hint="Nota 3" />
+
+            <EditText
+                android:id="@+id/inputNota4"
+                style="@style/InputStyle"
+                android:hint="Nota 4" />
+
+            <EditText
+                android:id="@+id/inputNota5"
+                style="@style/InputStyle"
+                android:hint="Nota 5" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Promedio"
+        android:backgroundTint="@color/oro"
+        android:textColor="@color/azul_fondo"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="18sp"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:gravity="center" />
+</LinearLayout>

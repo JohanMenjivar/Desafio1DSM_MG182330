@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul_fondo">#0A1F44</color>  <!-- Azul oscuro -->
+    <color name="oro">#FFD700</color>  <!-- Dorado -->
+    <color name="blanco">#FFFFFF</color>  <!-- Blanco -->
+    <color name="gris_hint">#B0B0B0</color>  <!-- Gris para los hints -->
+</resources>
